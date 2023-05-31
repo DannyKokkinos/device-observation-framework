@@ -81,11 +81,11 @@ On windows, add the Paths to Python to the system environment variables if they 
 ```
 sudo apt-get install python3-venv
 ```
-3. Create a python virtual environment using **python version 3.7**:
+3. Create a python virtual environment using **python version 3.7** (In the same base directory as the observation framework):
 ```
 python3 -m venv <environment_name>
 ```
-4. Activate environment: 
+4. Activate environment (This step should be repeated everytime the observation framework is used): 
 ```
 source <environment_name>/bin/activate 
 ```
