@@ -74,6 +74,22 @@ Both can also be found by clicking on the Code tab at the top of the Device Obse
 Prior to running the install script, python **version 3.6 or greater** and pip **version 3** must be installed and on the execution PATH.
 On windows, add the Paths to Python to the system environment variables if they were not added during the installation.
 
+### Python virtual environment
+**Python version 3.10** does not support a few of the required packeges. In that situation a virtual environment can be setup using the following steps:
+1. Install **Python version 3.7** https://vegastack.com/tutorials/how-to-install-python-3-7-on-ubuntu-20-04/
+2. Install python virtual environment package:
+```
+sudo apt-get install python3-venv
+```
+3. Create a python virtual environment using **python version 3.7**:
+```
+python3 -m venv <environment_name>
+```
+4. Activate environment: 
+```
+source <environment_name>/bin/activate 
+```
+
 **On Linux and Mac OS** systems, prior to each user using the Observation Framework for the first time, run:
 
 ```shell
